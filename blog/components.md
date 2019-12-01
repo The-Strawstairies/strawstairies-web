@@ -1,0 +1,12 @@
+---
+title: "Sourcing Components"
+layout: PostLayout
+date: 2019-10-29
+emoji: 🔋
+---
+
+After sketch modeling, we learned that we were going to need a lot of torque at certain points in the motion going up the stairs to actually achieve a stable climbing motion. With this realization, we recognized the need for more power in the system from the power supply all the way to the motors driving the whegs. As a result, we decided to start with what we could calculate: the torque at the worst case scenario and from there we can source a motor with gearing to achieve that motion. We knew a rough approximation of what the lever arm of the wheg would look like based on a few iterations of sketch modeling, and we estimated a mass of the entire robot based on a preliminary CAD model with the density of a likely used material for different components. From just the frame of the robot, we estimated roughly 15lbs, with an additional 5-10lbs in load and electrical components being the weight necessary to propel up the stairs. By multiplying the length of the lever arm by the mass of the entire robot, we could find how much torque is necessary for a single wheg to pull the robot up the stairs. From that calculation, we found that we needed roughly 2400oz-in of torque at the worst case scenario, or 1200oz-in per side of the robot to stably achieve the motion desired. From there, we also know the circumference of the wheels and we know how far a single rotation moves the robot. We estimated that with an RPM of 60, the robot would move about 2ft/second which is much more than we would even need. By understanding the RPM's correlation to motion and the required torque, we could spec motors with an understanding of the motion the robot creates from the output specs of a motor. 
+
+Essentially, we learned that the way to go about sourcing components is by taking the worst case scenario for what force is necessary and understanding the motor's rotational motion in terms of the robot, it becomes a lot easier to work backwards. Once we have selected a motor, we can ask and answer how much voltage and current is necessary to drive the system? Then we can select motor controllers and a battery that provide what we hypothesize is necessary. This backwards way of thinking (the motion output of the robot backwards to the source of power in the system) allowed us to understand the motion and then find what we needed for the robot to perform.
+
+-David

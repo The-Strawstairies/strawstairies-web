@@ -1,0 +1,30 @@
+{
+  "name": "inkering-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio made with vuepress.",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-brands-svg-icons": "^5.10.1",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "moment": "^2.24.0",
+    "vuepress": "^1.0.0-rc.1",
+    "vuepress-plugin-mathjax": "^1.2.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inkering/portfolio-testing.git"
+  },
+  "author": "Dieter Brehm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inkering/portfolio-testing/issues"
+  },
+  "homepage": "https://github.com/Inkering/portfolio-testing#readme"
+}
