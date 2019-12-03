@@ -163,7 +163,6 @@ yarn-error.log
 # End of https://www.gitignore.io/api/vue,node,vuejs,emacs
 
 .cache/
-public
 yarn-error.log
 
 # vscode editor nonesense

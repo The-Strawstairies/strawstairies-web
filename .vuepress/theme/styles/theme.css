@@ -7,6 +7,24 @@ div, p {
 		line-height: 2rem;
 		font-size: 1.2rem;
 }
+.rotate {
+	animation: rotation 20s infinite linear;
+	width: 20rem;
+	height: 20rem;
+	float: left;
+	position: fixed;
+	margin-left: -8rem;
+	margin-top: -8rem;
+	display: block
+}
+@keyframes rotation {
+from {
+	transform: rotate(0deg);
+}
+to {
+	transform: rotate(359deg);
+}
+}
 /* Navigation */
 .nav {
 		float:left;
