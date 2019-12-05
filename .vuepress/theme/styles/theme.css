@@ -1,9 +1,9 @@
 /* Type */
 h1,h2,h3,h4,h5 {
-		font-family: 'Goudy Bookletter 1911', serif;
+		font-family: 'Poppins', sans-serif;
 }
 div, p {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		line-height: 2rem;
 		font-size: 1.2rem;
 }

@@ -31,6 +31,9 @@ import Blog from "@theme/components/Blog";
 // moment js for transforming, creating, and parsing dates
 import moment from "moment"
 
+// poppins font
+import 'typeface-poppins'
+
 export default {
 		components: {
 				Nav,
@@ -48,7 +51,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Lato&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Lato&display=swap'); */
 @import '../styles/theme.css';
 </style>
 
