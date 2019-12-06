@@ -1,6 +1,6 @@
 <template>
 <header>
-		<div class="nav">
+		<div class="nav clearfix">
 				<div class="elements">
 						<router-link to="/"><h1 v-on:click="home">Strawstairies</h1></router-link>
 						<h1>//</h1>

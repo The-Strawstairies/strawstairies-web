@@ -31,11 +31,11 @@ to {
 }
 }
 /* Navigation */
-.nav {
+/* .nav {
 		float:left;
 		position:fixed;
 		width: 4rem;
-}
+} */
 .big {
 		height: 90vh;
 		margin-top: 10px;
@@ -61,16 +61,16 @@ to {
 .elements h1 {
 		margin-left: 1.3rem;
 		margin-bottom: 10px;
-		writing-mode: vertical-rl;
-		text-orientation: mixed;
-		float: left;
+		/* writing-mode: vertical-rl;
+		text-orientation: mixed; */
+		/* float: left; */
 		/* clear: left; */
 		font-size: 1.5rem;
 		line-height: 0.5rem;
 }
 .elements {
 		float:left;
-		width: 4rem;
+		/* width: 4rem; */
 		overflow: hidden;
 }
 .elements h1:first-child {
