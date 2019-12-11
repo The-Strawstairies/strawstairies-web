@@ -5,6 +5,8 @@
 			<h1 id="about">Hi, we're the Strawstairies</h1>
 			<Nav />
 
+			<video class="home-animation" src="/animation.mp4"></video>
+
 
 			<p class="aboutText">We're a Principles of Engineering team at Olin College of Engineering currently making
 				a stair climbing robot which is able to protect snacks and other objects during movement. It features
@@ -50,6 +52,22 @@
 				return moment(date).format("MMM Do YYYY");
 			}
 		},
+		mounted() {
+			let scrolling = false
+
+			window.addEventListener('wheel', (e) => {
+				scrolling = true
+			}, { capture: false, passive: true })
+			
+			setInterval(() => {
+				if (scrolling) {
+					scrolling = false
+					document.querySelectorAll('.home-animation')[0].currentTime = 	window.scrollY / 100
+					console.log('a')
+
+				}
+			},10)
+		}
 	};
 </script>
 
