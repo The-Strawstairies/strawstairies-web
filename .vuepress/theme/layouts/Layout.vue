@@ -28,6 +28,7 @@
 					<Content :pageKey="mechanics[0].key"></Content>
 				</template>
 			</div>
+			<div class="colorblock colorblock-behind mechanics"></div>
 			<div class="colorblock electronics" v-bind:class="{ expand: eceexpand }">
 				<h2>It’s got all you <br> need! </h2>
 				<a v-on:click="eceexpand = !eceexpand"><h2>Electrical Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
@@ -36,6 +37,7 @@
 					<Content :pageKey="electronics[0].key"></Content>
 				</template>
 			</div>
+			<div class="colorblock colorblock-behind electronics"></div>
 			<div class="colorblock software" v-bind:class="{ expand: softexpand }">
 				<h2>Fresh, <br>guaranteed</h2>
 				<a v-on:click="softexpand = !softexpand"><h2>Software Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
@@ -44,6 +46,7 @@
 					<Content :pageKey="software[0].key"></Content>
 				</template>
 			</div>
+			<div class="colorblock colorblock-behind software"></div>
 			<!-- <p class="colorblock aboutText">We're a Principles of Engineering team at Olin College of Engineering currently making
 				a stair climbing robot which is able to protect snacks and other objects during movement. It features
 				cute wheel-legs (whegs), active snack balancing technology, and wireless control!</p> -->
