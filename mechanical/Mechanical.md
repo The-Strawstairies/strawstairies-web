@@ -58,4 +58,4 @@ We are using a one axis actuated gimbal in order to keep objects (like snacks) f
 
 To connect everything, here is the gimbal assembly that is not yet attached to the chassis.
 
-![gimbal.jpg](./gimbal.jpg)
+![gimbal.jpg](./gimbal.JPG)
