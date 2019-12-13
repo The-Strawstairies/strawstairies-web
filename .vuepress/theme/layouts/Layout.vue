@@ -12,7 +12,10 @@
 
 			<img class="home-animation" src="/animation.gif" alt="">
 
+			<div class="colorblock hero">
+				<h2>Hello, <br>This is the <br>strawstairieey</h2>
 
+			</div>
 			<div class="colorblock mechanics">
 				<h2>We're <br>building a robot, <br>
 					 for you </h2>

@@ -47,6 +47,10 @@ html, body {
 .software {
 	background-color: #5CBAFE;
 }
+.hero h2{
+	font-size: 6rem;
+	line-height: 6rem;
+}
 
 /* Type */
 h1,h2,h3,h4,h5 {
