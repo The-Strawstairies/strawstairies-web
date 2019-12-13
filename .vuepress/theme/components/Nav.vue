@@ -7,8 +7,6 @@
 					<a href="/Sprints.html"><h1 class="nav-link" v-on:click="Sprint">Sprint</h1></a>
 					<h1>//</h1>
 					<a href="/Budget.html"><h1 class="nav-link" v-on:click="projects">Budget</h1></a>
-					<h1>//</h1>
-					<a href="/BlogPage.html"><h1 class="nav-link" v-on:click="blog">Blog</h1></a>
 				</div>
 		</div>
   </header>
