@@ -4,7 +4,11 @@ html, body {
 }
 
 .home-animation {
-	max-width: 100%;
+	/* max-width: 100%; */
+	position: fixed;
+top: -90px;
+left: 440px;
+width: 2285px;
 }
 
 /* color blocks on main page */
