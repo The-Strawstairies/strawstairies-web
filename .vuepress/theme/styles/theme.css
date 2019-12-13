@@ -50,12 +50,14 @@ div, p {
 .rotate {
 	pointer-events: none;
 	animation: rotation 20s infinite linear;
-	max-width: 40rem;
+	max-width: 24rem;
 	height: auto;
 	float: left;
 	position: absolute;
 	margin: 8rem;
-	display: block
+	display: block;
+	top: -110px;
+	left: 49px;
 }
 @keyframes rotation {
 from {
@@ -69,7 +71,7 @@ to {
 .home-logo {
 	max-width: 333px;
 	position: relative;
-	left: 30px;
+	left: 130px;
 	top: 30px;
 }
 .nav h1 {
@@ -77,6 +79,7 @@ to {
 	color: black;
 	margin-left: 0;
 	cursor: pointer;
+	height: 3rem;
 }
 .nav-link:hover::after {
 	content: '';
