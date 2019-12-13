@@ -18,6 +18,10 @@ html, body {
 .colorblock {
 	height: 30rem;
 	width: 100%;
+	transition: height 0.2s ease;
+}
+div.expand {
+	height: 60rem;
 }
 .colorblock p {
 	margin: 0;
