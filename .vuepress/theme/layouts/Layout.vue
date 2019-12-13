@@ -6,7 +6,7 @@
 			<h1 id="about">The<br>Strawstairies</h1>
 			<Nav />
 
-			<img src="/animation.gif" alt="">
+			<img class="home-animation" src="/animation.gif" alt="">
 
 
 			<p class="aboutText">We're a Principles of Engineering team at Olin College of Engineering currently making
