@@ -28,6 +28,9 @@ html, body {
 	text-decoration: underline;
 	color: black;
 }
+.colorblock a:hover {
+	color: white;
+}
 .mechanics {
 	background-color: #FECC5C;
 }
