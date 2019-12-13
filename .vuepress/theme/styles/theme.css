@@ -17,13 +17,14 @@ div, p {
 		font-size: 1.2rem;
 }
 .rotate {
+	pointer-events: none;
 	animation: rotation 20s infinite linear;
-	width: 20rem;
-	height: 20rem;
+	width: 40rem;
+	height: 40rem;
 	float: left;
-	position: fixed;
-	margin-left: -8rem;
-	margin-top: -8rem;
+	position: absolute;
+	margin-left: 3rem;
+	margin-top: 3rem;
 	display: block
 }
 @keyframes rotation {
