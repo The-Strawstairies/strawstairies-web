@@ -2,7 +2,7 @@
 	<div>
 		<img class="rotate" src="/circle.png" alt="">
 		<div class="main">
-			<h1 id="about">Hi, we're the Strawstairies</h1>
+			<h1 id="about">The<br>Strawstairies</h1>
 			<Nav />
 
 			<img src="/animation.gif" alt="">
