@@ -6,7 +6,7 @@
 			<h1 id="about">The<br>Strawstairies</h1>
 			<Nav />
 
-			<img src="/animation.gif" alt="">
+			<img class="home-animation" src="/animation.gif" alt="">
 
 
 			<div class="colorblock mechanics">

@@ -4,7 +4,7 @@ html, body {
 }
 
 .home-animation {
-	width: 100%;
+	max-width: 100%;
 }
 
 /* color blocks on main page */
@@ -38,12 +38,11 @@ div, p {
 .rotate {
 	pointer-events: none;
 	animation: rotation 20s infinite linear;
-	width: 40rem;
-	height: 40rem;
+	max-width: 40rem;
+	height: auto;
 	float: left;
 	position: absolute;
-	margin-left: 3rem;
-	margin-top: 3rem;
+	margin: 8rem;
 	display: block
 }
 @keyframes rotation {
@@ -56,7 +55,7 @@ to {
 }
 /* Navigation */
 .home-logo {
-	width: 333px;
+	max-width: 333px;
 	position: relative;
 	left: 30px;
 	top: 30px;
@@ -181,33 +180,7 @@ blockquote p {
 
 }
 
-/* @media all and (max-width: 1690px) { ...} */
-/* @media all and (max-width: 1280px) { ...} */
-/* @media all and (max-width: 980px) { ... } */
-/* @media all and (max-width: 736px) { ... } */
-@media all and (max-width: 480px) {
-		.nav {
-				display: none;
-		}
-		.main {
-				margin-left: 1rem;
-		}
-		.mobile-icons {
-				margin-right: 1rem;
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-		}
-		.icon {
-				padding: 0 1.1rem 0 1.1rem;
-		}
-		.mobile-home {
-				display: inline;
-		}
-}
-@media all and (max-height: 740px) {
+@media all and (max-width: 740px) {
 		.mobile-icons {
 				margin-right: 1rem;
 				display: flex;
@@ -222,27 +195,7 @@ blockquote p {
 		.links {
 				display:none;
 		}
-}
-@media all and (max-height: 480px) {
-		.nav {
-				display: none;
-		}
-		.main {
-				margin-left: 1rem;
-		}
-		.mobile-icons {
-				margin-right: 1rem;
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-		}
-		.icon {
-				padding: 0 1.1rem 0 1.1rem;
-		}
-		.mobile-home {
-				display: inline;
-		}
+	.home-logo { max-width: 100px }
+	/* .rotate { max-width: 200px } */
 }
 
