@@ -1,20 +1,44 @@
 /* Background */
 html, body {
 	background-color: #81DF80;
+	z-index: 0;
 }
 
 .home-animation {
-	max-width: 100%;
+	z-index: 1;
+	pointer-events: none;
+	position: fixed;
+	top: 0px;
+	right: -300px;
+	width: 1500px;
+	overflow: hidden;
 }
 
 /* color blocks on main page */
 .colorblock {
-	height: 20rem;
+	height: 30rem;
 	width: 100%;
 }
 .colorblock p {
 	margin: 0;
-	padding: 0;
+}
+.colorblock h2 {
+	font-size: 4rem;
+	padding: 1rem;
+	line-height: 4rem;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.link-icon {
+	display: inline;
+}
+.colorblock a {
+	text-decoration: underline;
+	color: black;
+}
+.colorblock a:hover {
+	color: white;
+	transition: color 0.2s ease;
 }
 .mechanics {
 	background-color: #FECC5C;
@@ -24,6 +48,10 @@ html, body {
 }
 .software {
 	background-color: #5CBAFE;
+}
+.hero h2{
+	font-size: 6rem;
+	line-height: 6rem;
 }
 
 /* Type */
@@ -38,12 +66,14 @@ div, p {
 .rotate {
 	pointer-events: none;
 	animation: rotation 20s infinite linear;
-	max-width: 40rem;
+	max-width: 24rem;
 	height: auto;
 	float: left;
 	position: absolute;
 	margin: 8rem;
-	display: block
+	display: block;
+	top: -110px;
+	left: -11px;
 }
 @keyframes rotation {
 from {
@@ -57,24 +87,39 @@ to {
 .home-logo {
 	max-width: 333px;
 	position: relative;
-	left: 30px;
+	left: 70px;
 	top: 30px;
+}
+.header {
+	margin-left: 4rem;
 }
 .nav h1 {
 	display: inline-block;
 	color: black;
 	margin-left: 0;
 	cursor: pointer;
+	height: 3rem;
+	z-index: 100;
+	position:relative;
 }
-.nav-link:hover::after {
+.nav-link::after {
+	pointer-events: none;
 	content: '';
 	display: block;
 	height: 10px;
-	background-color: white;
+	background-color: rgba(255,255,255);
+	opacity: 1;
 	width: 100%;
 	position: relative;
-	top: -1rem;
+	top: -20px;
+	opacity: 0;
   }
+.nav-link:hover::after {
+	transition: opacity 0.2s ease;
+	opacity: 0.7;
+}
+.nav-link:active::after { opacity: 1 }
+
 
 .big {
 		height: 90vh;
@@ -96,7 +141,9 @@ to {
 		margin-bottom: 1rem;
 }
 #about {
-		font-size: 4rem;
+	font-size: 3.5rem;
+	font-weight: 800;
+	line-height: 2rem;
 }
 .elements {
 		float:left;
@@ -106,13 +153,10 @@ to {
 .elements h1:first-child {
 		margin-top: 10px;
 }
-h2:first-of-type {
-		margin-top: 1.2rem;
-}
 /* Main Section */
 .main {
-		margin-left: 4rem;
-		max-width: 70rem;
+		/* margin-left: 4rem; */
+		/* max-width: 70rem; */
 }
 .logo {
 		width: 10rem;
@@ -170,14 +214,6 @@ blockquote p {
 }
 .article-home {
 		font-size: 3.5rem;
-}
-/* Portrait */
-@media only screen
-	and (min-device-width: 375px)
-	and (max-device-width: 812px)
-	and (-webkit-min-device-pixel-ratio: 3)
-	and (orientation: portrait) {
-
 }
 
 @media all and (max-width: 740px) {

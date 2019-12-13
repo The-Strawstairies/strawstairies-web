@@ -2,21 +2,36 @@
 	<div>
 		<img class="rotate" src="/circle.png" alt="">
 		<div class="main">
-			<img class="home-logo" src="/strawberry.png" alt="">
-			<h1 id="about">The<br>Strawstairies</h1>
-			<Nav />
+			<header class="header">
+
+
+				<img class="home-logo" src="/strawberry.png" alt="">
+				<h1 id="about">The<br>Strawstairies</h1>
+				<Nav />
 
 			<img class="home-animation" src="/animation.gif" alt="">
 
 
+			</header>
+
+
+			<div class="colorblock hero">
+				<h2>Hello, <br>This is the <br>strawstairieey</h2>
+
+			</div>
 			<div class="colorblock mechanics">
-				<p>hi</p>
+				<h2>We're <br>building a robot, <br>
+					 for you </h2>
+
+				<a href="#"><h2>Mechanics Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 			</div>
 			<div class="colorblock electronics">
-				<p>hi</p>
+				<h2>It’s got all you <br> need! </h2>
+				<a href="#"><h2>Electrical Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 			</div>
 			<div class="colorblock software">
-				<p>hi</p>
+				<h2>Fresh, <br>guaranteed</h2>
+				<a href="#"><h2>Software Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 			</div>
 			<!-- <p class="colorblock aboutText">We're a Principles of Engineering team at Olin College of Engineering currently making
 				a stair climbing robot which is able to protect snacks and other objects during movement. It features
@@ -36,12 +51,18 @@
 </template>
 
 <script>
+	import 'normalize.css'
 	import Vue from 'vue'
 	// internal components
 	import Nav from "@theme/components/Nav";
 	import Footer from "@theme/components/Footer";
 	import ProjectList from "@theme/components/ProjectList";
 	import Blog from "@theme/components/Blog";
+	import { library } from '@fortawesome/fontawesome-svg-core'
+	import { faPaperPlane, faCaretRight} from '@fortawesome/free-solid-svg-icons'
+	import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+	library.add(faCaretRight)
+	Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 	// moment js for transforming, creating, and parsing dates
 	import moment from "moment"
