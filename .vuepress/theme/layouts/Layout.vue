@@ -2,6 +2,7 @@
 	<div>
 		<img class="rotate" src="/circle.png" alt="">
 		<div class="main">
+			<img class="home-logo" src="/strawberry.png" alt="">
 			<h1 id="about">The<br>Strawstairies</h1>
 			<Nav />
 

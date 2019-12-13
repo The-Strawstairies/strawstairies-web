@@ -35,6 +35,12 @@ to {
 }
 }
 /* Navigation */
+.home-logo {
+	width: 333px;
+	position: relative;
+	left: 30px;
+	top: 30px;
+}
 .nav h1 {
 	display: inline-block;
 	color: black;
