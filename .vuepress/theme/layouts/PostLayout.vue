@@ -5,9 +5,9 @@
 					<router-link class="mobile-home" to="/"><h1 class="article-home" v-on:click="home">Dieter Brehm</h1></router-link>
 					<article class="h-entry">
 							<h2 class="pageTitle p-name">{{$page.frontmatter.title}}</h2>
-							<label>
+							<!-- <label>
 									<span class="dt-published">{{formatDate($page.frontmatter.date)}}</span>
-							</label>
+							</label> -->
 							<Content/>
 					</article>
 			</div>

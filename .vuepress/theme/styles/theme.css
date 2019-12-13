@@ -221,7 +221,7 @@ table {
 	overflow-x: auto;
 }
 td, th {
-	border: 1px solid #dfe2e5;
+	border: 1px solid #000000;
 	padding: .6em 1em;
 }
 pre[class*="language-"] {
