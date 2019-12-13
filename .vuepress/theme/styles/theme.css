@@ -217,7 +217,7 @@ blockquote p {
 		font-size: 3.5rem;
 }
 
-@media all and (max-width: 740px) {
+@media all and (max-width: 860px) {
 		.mobile-icons {
 				margin-right: 1rem;
 				display: flex;
@@ -233,6 +233,22 @@ blockquote p {
 				display:none;
 		}
 	.home-logo { max-width: 100px }
-	/* .rotate { max-width: 200px } */
+	.home-animation {
+		position: relative;
+		top: auto;
+		animation: slide-left 3s ease-out forwards;
+		right: auto;
+		max-width: 100%;
+	}
+	.rotate {
+		max-width: 	9rem;
+		top: -117px;
+		left: -19px;
+	}
+}
+
+@keyframes slide-left {
+	from { left: 0 }
+	to { left: -100px }
 }
 
