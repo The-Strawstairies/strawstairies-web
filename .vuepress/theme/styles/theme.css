@@ -32,6 +32,10 @@ width: 2285px;
 	text-decoration: underline;
 	color: black;
 }
+.colorblock a:hover {
+	color: white;
+	transition: color 0.2s ease;
+}
 .mechanics {
 	background-color: #FECC5C;
 }
