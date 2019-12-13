@@ -41,6 +41,10 @@ From there we moved on to integrating the whegs into a CAD model so that we coul
 
 ![curvedwheg.jpg](./curvedwheg.jpg)
 
+To connect the whegs to the chain-driven system, have the CAD design of the axel assembly to connect hubs, sprockets, and correct spacing for wheg drive as shown below.
+
+![whegexplode.jpg](./whegexplode.jpg)
+
 ## Chassis
 The chassis is comprised of two MDF boards with a fun hexagon pattern cutout to make easy attachment points for zip ties, give easier access to parts, and lighten our robot. The two MDF boards are held together by standoffs we manufactured by cutting, drilling, and tapping aluminum rod. We used the same manufacturing process for all the other plates and standoffs in our robot to attach the gimble, motors, and electronics.
 
@@ -52,4 +56,6 @@ We are using a one axis actuated gimbal in order to keep objects (like snacks) f
 
 ![lasercutbalance.jpg](./lasercutbalance.jpg)
 
-link to cad?
+To connect everything, here is the gimbal assembly that is not yet attached to the chassis.
+
+![gimbal.jpg](./gimbal.jpg)
