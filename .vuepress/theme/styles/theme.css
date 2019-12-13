@@ -46,7 +46,17 @@ to {
 	display: inline-block;
 	color: black;
 	margin-left: 0;
+	cursor: pointer;
 }
+.nav-link:hover::after {
+	content: '';
+	display: block;
+	height: 10px;
+	background-color: white;
+	width: 100%;
+	position: relative;
+	top: -1rem;
+  }
 
 .big {
 		height: 90vh;

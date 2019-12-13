@@ -2,13 +2,13 @@
 <header>
 		<div class="nav clearfix">
 				<div class="elements">
-						<router-link to="/"><h1 v-on:click="home">Strawstairies</h1></router-link>
+						<router-link to="/"><h1 class="nav-link" v-on:click="home">Strawstairies</h1></router-link>
 						<h1>//</h1>
-						<h1 v-on:click="about">About</h1>
+						<h1 class="nav-link" v-on:click="about">About</h1>
 						<h1>//</h1>
-						<h1 v-on:click="projects">Features</h1>
+						<h1 class="nav-link" v-on:click="projects">Features</h1>
 						<h1>//</h1>
-						<h1 v-on:click="blog">Blog</h1>
+						<h1 class="nav-link" v-on:click="blog">Blog</h1>
 				</div>
 		</div>
   </header>
