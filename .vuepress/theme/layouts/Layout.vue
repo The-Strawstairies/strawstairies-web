@@ -6,7 +6,7 @@
 
 
 				<img class="home-logo" src="strawberry.png" alt="">
-				<h1 id="about">The<br>Strawstairies</h1>
+				<h1 id="about">The<br>StrawStairies</h1>
 				<Nav />
 
 			<img class="home-animation" src="animation.gif" alt="">
@@ -15,14 +15,13 @@
 
 
 			<div class="colorblock hero">
-				<h2>Hello, <br>This is the <br>strawstairieey</h2>
-
+				<h2>Hello, <br>This is the <br>StrawStairy</h2>
+				<p class="hero-copy">The StrawStairy is a stair-climbing robot with a stabilized platform. It can climb and descend standard Olin staircases, roaming the dorms to deliver strawberries. It can be controlled over the internet through a secure, encrypted wireless control system.</p>
 			</div>
 			<div class="colorblock mechanics" v-bind:class="{ expand: mechexpand }">
-				<h2>We're <br>building a robot, <br>
-					 for you </h2>
+				<h2>Engineered for <br> years of safe <br> deliveries</h2>
 
-				<a v-on:click="mechexpand = !mechexpand"><h2>Mechanics Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
+				<a v-on:click="mechexpand = !mechexpand"><h2>Mechanical Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 				<template v-if="mechexpand">
 					<!-- mechanical page -->
 					<Content :pageKey="mechanics[0].key"></Content>
@@ -30,7 +29,7 @@
 			</div>
 			<div class="colorblock colorblock-behind mechanics"></div>
 			<div class="colorblock electronics" v-bind:class="{ expand: eceexpand }">
-				<h2>It’s got all you <br> need! </h2>
+				<h2>Power to deliver <br> across campus</h2>
 				<a v-on:click="eceexpand = !eceexpand"><h2>Electrical Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 				<template v-if="eceexpand">
 					<!-- ece page -->
@@ -39,7 +38,7 @@
 			</div>
 			<div class="colorblock colorblock-behind electronics"></div>
 			<div class="colorblock software" v-bind:class="{ expand: softexpand }">
-				<h2>Fresh, <br>guaranteed</h2>
+				<h2>Fresh wireless control, guaranteed. <br> From anywhere. </h2>
 				<a v-on:click="softexpand = !softexpand"><h2>Software Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 				<template v-if="softexpand">
 					<!-- software page -->

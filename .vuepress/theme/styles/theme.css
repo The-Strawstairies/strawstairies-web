@@ -40,6 +40,10 @@ div.expand {
 .colorblock p {
 	margin: 0;
 }
+.hero-copy {
+	padding-left: 4rem;
+	max-width: 50vw;
+}
 .colorblock h2 {
 	font-size: 4rem;
 	padding: 1rem;
@@ -288,7 +292,11 @@ blockquote p {
 		left: -19px;
 	}
 	.colorblock {
-		height: 15rem;
+		height: auto;
+	}
+	.hero-copy {
+		max-width: 80%;
+		padding-bottom: 18px;
 	}
 	.colorblock h2 {
 		font-size: 2rem;
