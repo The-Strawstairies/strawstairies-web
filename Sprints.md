@@ -4,13 +4,9 @@ layout: PostLayout
 date: 2019-11-14
 emoji: 📯
 ---
-<img src="system diagram.jpg" alt="">
-
 Our project was split into 4 sprints of progress.
 
 # Sprint 1
-## Design Decisions
-* Decided on a wheg design rather than wheels
 ## Progress
 * Sketch modeling
 * Integration of motors, sketch model, and drive code
@@ -20,8 +16,6 @@ Our project was split into 4 sprints of progress.
 * Difficult to test with cardboard
 
 # Sprint 2
-## Design Decisions
-
 ## Progress
 * Prototyped a gimbal for the load balancing aspect of our robot
 * Specced and ordered all mechanical and electrical components needed for the robot
@@ -35,6 +29,21 @@ Our project was split into 4 sprints of progress.
 * Motors missing in the mail
 
 # Sprint 3
+## Progress
+* Gimbal CAD done and ready to manufacture final gimbal
+* Assembled drive train
+* Designed and 3D printed wheg hubs
+* Assembled chassis
+* Integrated all final electronics
+* Drove up the stairs for the first time!
 
+## Problems to fix
+* Wheg alignment and traction
+* Gimbal system finicky
 
 # Sprint 4
+## Progress
+* Aligned the whegs
+* Added rubber boots for traction
+* Constructed and assembled gimbal
+* Integrated gimbal code
