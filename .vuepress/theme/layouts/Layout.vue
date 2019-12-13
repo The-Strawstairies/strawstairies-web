@@ -4,13 +4,16 @@
 		<div class="main">
 			<header class="header">
 
+
 				<img class="home-logo" src="/strawberry.png" alt="">
 				<h1 id="about">The<br>Strawstairies</h1>
 				<Nav />
 
+			<img class="home-animation" src="/animation.gif" alt="">
+
+
 			</header>
 
-			<img class="home-animation" src="/animation.gif" alt="">
 
 
 			<div class="colorblock mechanics">
