@@ -2,13 +2,13 @@
 <header>
 		<div class="nav clearfix">
 				<div class="elements">
-						<router-link to="/"><h1 v-on:click="home">Strawstairies</h1></router-link>
+						<router-link to="/"><h1 class="nav-link" v-on:click="home">Strawstairies</h1></router-link>
 						<h1>//</h1>
-						<h1 v-on:click="about">About</h1>
+						<h1 class="nav-link" v-on:click="about">About</h1>
 						<h1>//</h1>
-						<h1 v-on:click="projects">Features</h1>
+						<h1 class="nav-link" v-on:click="projects">Features</h1>
 						<h1>//</h1>
-						<h1 v-on:click="blog">Blog</h1>
+						<h1 class="nav-link" v-on:click="blog">Blog</h1>
 				</div>
 		</div>
   </header>
@@ -23,7 +23,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane, faCaretRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // font awesome setup
 library.add(faInstagram)
@@ -31,6 +31,7 @@ library.add(faGithub)
 library.add(faTwitter)
 library.add(faLinkedin)
 library.add(faPaperPlane)
+library.add(faCaretRight)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
