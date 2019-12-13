@@ -1,3 +1,5 @@
+You can find our software on [github!](https://github.com/The-Strawstairies/Stairclimber-v1)
+
 # Software Requirements
 * Drive the robot with adjustable speed (C++) 
 * Manage keyboard inputs to execute motion commands (Python)
@@ -7,10 +9,14 @@
 # General Description
 ## Python
 Once the user has connected to the Raspberry Pi, which has our code repository already flashed into the device, we run a Python script which handles the keyboard input using threading and termios, a Linux terminal I/O module that enables us to read command line inputs. This enables us to continuously check for inputs and add them to a thread which we can parse and use. We first get a key, then parse the input to see if it matches with any of the keys mapped to commands such as drive forward, backwards, or increase/decrease speed. From there, we have a serial connection from the Raspberry Pi this code is running on and the Arduino. We write the key command to the serial monitor and the C++ code on the Arduino handles the input to drive the robot based on these inputs. 
+
+The Python side file can be found [here!](https://github.com/The-Strawstairies/Stairclimber-v1/blob/master/src-analysis/main.py)
 ## C++
 With keyboard inputs coming in via Serial, we create a system of modes that will be run based on the keyboard input. This functionality is shown below:
-![switchmode.jpg](./switchmode.JPG)
+![switchmode.jpg](./switchmode.jpg)
 By switching between between these modes, we can seamlessly perform multiple motion tasks and switch between them. While we are doing this every single loop, we are also checking the accelerometer and gyroscope data. We configured the gyroscope and accelerometer to have the lowest range of motion to detect, but it will detect it with the highest accuracy. We found that our robot wasn't ever reaching accelerations greater than +/- 2g so we could have a much more precise measurement. We then use the gyroscope which we configured for slight error to read the bytes containing the angle in the axis we are balancing in. We convert the units to degrees and write the opposite of that value to the servo to balance. By doing both of these tasks every loop and controlling through the Python side, we can have a solid wireless control that accomplishes all of our requirements. 
+
+The C++/Arduino side source code can be found [here!](https://github.com/The-Strawstairies/Stairclimber-v1/tree/master/src) The libraries we used to help process IMU data can be seen [here!](https://github.com/The-Strawstairies/Stairclimber-v1/tree/master/lib)
 
 # Controls
 For simplicity, we used a WASD style interface to drive the robot where <kbd>"T"</kbd> drives forward, <kbd>"G"</kbd> drives backwards, <kbd>"F"</kbd> drives left and <kbd>"H"</kbd> drives right for phase alignment. Furthermore, for code safety, we have a start and stop command which are <kbd>"S"</kbd> and <kbd>"E"</kbd>, respectively. To increase the speed of the robot, you can input <kbd>"."</kbd>, which increases the speed by 10%. Alternatively, <kbd>","</kbd> will decrease the speed by 10%. Speed control is done by a percentage of the maximum linear velocity. 
