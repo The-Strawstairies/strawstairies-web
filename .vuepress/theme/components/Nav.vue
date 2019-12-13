@@ -23,7 +23,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane, faCaretRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // font awesome setup
 library.add(faInstagram)
@@ -31,6 +31,7 @@ library.add(faGithub)
 library.add(faTwitter)
 library.add(faLinkedin)
 library.add(faPaperPlane)
+library.add(faCaretRight)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
