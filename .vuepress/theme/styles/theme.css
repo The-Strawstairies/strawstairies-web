@@ -7,6 +7,25 @@ html, body {
 	width: 100%;
 }
 
+/* color blocks on main page */
+.colorblock {
+	height: 20rem;
+	width: 100%;
+}
+.colorblock p {
+	margin: 0;
+	padding: 0;
+}
+.mechanics {
+	background-color: #FECC5C;
+}
+.electronics {
+	background-color: #FE5C5C;
+}
+.software {
+	background-color: #5CBAFE;
+}
+
 /* Type */
 h1,h2,h3,h4,h5 {
 		font-family: 'Poppins', sans-serif;
