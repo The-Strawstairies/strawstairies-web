@@ -50,8 +50,11 @@ div.expand {
 }
 .content__default {
 	margin-left: 4rem;
+	padding-right: 100px
 }
+.content__default h1 { font-size: 2.5rem }
 .content__default h2 {
+	font-size: 1.5rem;
 	margin-left: 0;
 	padding: 0;
 }
@@ -88,6 +91,9 @@ div.expand {
 .hero h2{
 	font-size: 5rem;
 	line-height: 4.5rem;
+}
+img[alt="schematic"] {
+	max-width: 100%;
 }
 
 /* Type */
