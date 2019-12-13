@@ -60,7 +60,7 @@ div, p {
 	margin: 8rem;
 	display: block;
 	top: -110px;
-	left: 49px;
+	left: -11px;
 }
 @keyframes rotation {
 from {
@@ -74,7 +74,7 @@ to {
 .home-logo {
 	max-width: 333px;
 	position: relative;
-	left: 130px;
+	left: 70px;
 	top: 30px;
 }
 .nav h1 {
@@ -84,15 +84,24 @@ to {
 	cursor: pointer;
 	height: 3rem;
 }
-.nav-link:hover::after {
+.nav-link::after {
+	pointer-events: none;
 	content: '';
 	display: block;
 	height: 10px;
-	background-color: white;
+	background-color: rgba(255,255,255);
+	opacity: 1;
 	width: 100%;
 	position: relative;
-	top: -1rem;
+	top: -20px;
+	opacity: 0;
   }
+.nav-link:hover::after {
+	transition: opacity 0.2s ease;
+	opacity: 0.7;
+}
+.nav-link:active::after { opacity: 1 }
+
 
 .big {
 		height: 90vh;
@@ -114,7 +123,9 @@ to {
 		margin-bottom: 1rem;
 }
 #about {
-		font-size: 4rem;
+	font-size: 3.5rem;
+	font-weight: 800;
+	line-height: 2rem;
 }
 .elements {
 		float:left;
