@@ -105,21 +105,21 @@
 		computed: {
 			mechanics: function () {
 				return this.$site.pages
-					.filter(x => x.path.startsWith("/blog/mechanical/"))
+					.filter(x => x.path.startsWith("/mechanical/"))
 					.sort(
 							(a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
 					);
 			},
 			electronics: function () {
 				return this.$site.pages
-					.filter(x => x.path.startsWith("/blog/electrical/"))
+					.filter(x => x.path.startsWith("/electrical/"))
 					.sort(
 							(a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
 					);
 			},
 			software: function () {
 				return this.$site.pages
-					.filter(x => x.path.startsWith("/blog/software/"))
+					.filter(x => x.path.startsWith("/software/"))
 					.sort(
 							(a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
 					);
