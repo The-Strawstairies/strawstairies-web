@@ -1,18 +1,25 @@
 <template>
   <div>
-			<Nav/>
-			<div class="main">
-					<router-link class="mobile-home" to="/"><h1 class="article-home" v-on:click="home">Dieter Brehm</h1></router-link>
-					<article class="h-entry">
-							<h2 class="pageTitle p-name">{{$page.frontmatter.title}}</h2>
-							<!-- <label>
-									<span class="dt-published">{{formatDate($page.frontmatter.date)}}</span>
-							</label> -->
-							<Content/>
-					</article>
-			</div>
-			<Footer/>
+		<img class="rotate" src="circle.png" alt="">
+		<div class="main">
+			<header class="header">
 
+
+				<img class="home-logo" src="strawberry.png" alt="">
+				<h1 id="about">The<br>Strawstairies</h1>
+				<Nav />
+
+				<img class="home-animation" src="animation.gif" alt="">
+			</header>
+			<article class="h-entry">
+					<h2 class="pageTitle p-name">{{$page.frontmatter.title}}</h2>
+					<!-- <label>
+							<span class="dt-published">{{formatDate($page.frontmatter.date)}}</span>
+					</label> -->
+					<Content/>
+			</article>
+		</div>
+		<Footer/>
   </div>
 </template>
 
