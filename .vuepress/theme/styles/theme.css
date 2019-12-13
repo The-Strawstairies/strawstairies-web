@@ -19,6 +19,7 @@ html, body {
 	font-size: 4rem;
 	padding: 1rem;
 	line-height: 4rem;
+	margin-top: 0;
 	margin-bottom: 0;
 }
 .link-icon {
@@ -135,9 +136,6 @@ to {
 }
 .elements h1:first-child {
 		margin-top: 10px;
-}
-h2:first-of-type {
-		margin-top: 1.2rem;
 }
 /* Main Section */
 .main {
