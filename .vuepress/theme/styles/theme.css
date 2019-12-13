@@ -38,12 +38,14 @@ div, p {
 .rotate {
 	pointer-events: none;
 	animation: rotation 20s infinite linear;
-	max-width: 40rem;
+	max-width: 24rem;
 	height: auto;
 	float: left;
 	position: absolute;
 	margin: 8rem;
-	display: block
+	display: block;
+	top: -110px;
+	left: -51px;
 }
 @keyframes rotation {
 from {
