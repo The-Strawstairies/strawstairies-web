@@ -5,6 +5,7 @@ date: 2019-11-14
 emoji: 📯
 ---
 Our project was split into 4 sprints of progress.
+![the system diagram](system-diagram.png)
 
 # Sprint 1
 ## Progress
