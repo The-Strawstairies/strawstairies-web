@@ -32,3 +32,4 @@ As for our process, there were a few givens and then a few decisions we could ha
 
 From there, we had all of our non-battery components and could figure out how to power the system. We needed a near-12VDC battery to power motor controllers and drive motors, but we also needed a 5V power supply for the Arduino, Raspberry Pi, IMU, and servo. To avoid a voltage stepdown, we used an Adafruit Arduino Motor Shield which has a built in voltage stepdown from 12VDC to 5VDC. We used this to power everything on the 5V rail except for the Raspberry Pi which draws too much current for the Arduino to handle along with the other supplies. We then strapped a 5V phone battery charger onto the robot to power the Raspberry Pi. Finally, we just had to wire everything up and make sure it all worked (spoiler alert: it did!). Because of our carefullness with fuses and calculations for what we expected the current draws to be, we didn't burn anything out :)
 
+<!-- more -->

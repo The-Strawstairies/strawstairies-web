@@ -31,7 +31,7 @@ html, body {
 	height: 100px;
 }
 div.expand {
-	height: 60rem;
+	height: auto;
 }
 .colorblock p {
 	margin: 0;

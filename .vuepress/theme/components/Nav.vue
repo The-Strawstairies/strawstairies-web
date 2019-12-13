@@ -4,9 +4,9 @@
 				<div class="elements">
 						<router-link to="/"><h1 class="nav-link" v-on:click="home">Strawstairies</h1></router-link>
 						<h1>//</h1>
-						<h1 class="nav-link" v-on:click="about">About</h1>
+						<h1 class="nav-link" v-on:click="Sprint">Sprint</h1>
 						<h1>//</h1>
-						<h1 class="nav-link" v-on:click="projects">Features</h1>
+						<h1 class="nav-link" v-on:click="projects">Budget</h1>
 						<h1>//</h1>
 						<h1 class="nav-link" v-on:click="blog">Blog</h1>
 				</div>
