@@ -5,7 +5,7 @@
 			<h1 id="about">Hi, we're the Strawstairies</h1>
 			<Nav />
 
-			<video class="home-animation" src="/animation.mp4"></video>
+			<img src="/animation.gif" alt="">
 
 
 			<p class="aboutText">We're a Principles of Engineering team at Olin College of Engineering currently making
@@ -53,20 +53,6 @@
 			}
 		},
 		mounted() {
-			let scrolling = false
-
-			window.addEventListener('wheel', (e) => {
-				scrolling = true
-			}, { capture: false, passive: true })
-			
-			setInterval(() => {
-				if (scrolling) {
-					scrolling = false
-					document.querySelectorAll('.home-animation')[0].currentTime = 	window.scrollY / 100
-					console.log('a')
-
-				}
-			},10)
 		}
 	};
 </script>
