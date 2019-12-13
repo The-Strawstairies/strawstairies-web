@@ -35,7 +35,6 @@ tramp
 
 # cask packages
 .cask/
-dist/
 
 # Flycheck
 flycheck_*.el
@@ -131,9 +130,6 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# vuepress build output
-.vuepress/dist
-
 # Serverless directories
 .serverless/
 
@@ -167,3 +163,5 @@ yarn-error.log
 
 # vscode editor nonesense
 .vscode/
+
+.vuepress/dist
