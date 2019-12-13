@@ -6,3 +6,5 @@ emoji: 📯
 ---
 
 Hello!
+
+<img src="./schem.png" alt="schematic" width="2000"/>
