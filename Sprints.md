@@ -17,7 +17,7 @@ Our project was split into 4 sprints of progress.
 
 # Sprint 2
 ## Progress
-* Prototyped a gimbal for the load balancing aspect of our robot
+* Prototyped a gimbal for the load balancing aspect of our robot.
 * Specced and ordered all mechanical and electrical components needed for the robot
 * Manufactured the chassis standoffs and boards
 * Assembled the Chassis
