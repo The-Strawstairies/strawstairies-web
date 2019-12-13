@@ -316,3 +316,18 @@ blockquote p {
 	to { left: -100px }
 }
 
+.people-title {margin-left: 4rem; font-size: 3rem;}
+
+
+.profiles div {
+	margin-top: 20px;
+	max-width: 1000px;
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
+.profiles img {
+	width: 100px;
+	height: 100px;
+	border-radius: 15px;
+}

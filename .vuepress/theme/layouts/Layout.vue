@@ -58,6 +58,29 @@
 			</ul>
 			<h1 id="blog">Blog</h1>
 			<Blog /> -->
+			<div class="profiles">
+				<h1 class="people-title">Team</h1>
+				<div>
+					<img src="caroline.jpg" alt="">
+					<h1>Caroline Rausch</h1>
+					<p>Olin College of Engineering, class of 2022. Caroline worked on the mechanical design of the robot in CAD as well as manufacturing and assembly of the robot.</p>
+				</div>
+				<div>
+					<img src="david.jpg" alt="">
+					<h1>David Tarazi</h1>
+					<p>Olin College of Engineering, class of 2022. David worked all around with different systems in the robot, focusing on the sensor processing and software/firmware for drive and balance.</p>
+				</div>
+				<div>
+					<img src="dieter.jpg" alt="">
+					<h1>Dieter Brehm</h1>
+					<p>Olin College of Engineering, class of 2022. Dieter worked on the software and firmware of the control system, and assisted heavily in website design and implementation</p>
+				</div>
+				<div>
+					<img src="sam.jpg" alt="">
+					<h1>Sam Daitzman</h1>
+					<p>Olin College of Engineering, class of 2022. Sam worked on the system design (like the whegs and mechnical system modeling) and the website.</p>
+				</div>
+			</div>
 			<Footer />
 		</div>
 	</div>
