@@ -30,6 +30,7 @@ html, body {
 }
 .colorblock a:hover {
 	color: white;
+	transition: color 0.2s ease;
 }
 .mechanics {
 	background-color: #FECC5C;
