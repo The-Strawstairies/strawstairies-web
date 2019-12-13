@@ -19,19 +19,19 @@
 				<h2>Hello, <br>This is the <br>strawstairieey</h2>
 
 			</div>
-			<div class="colorblock mechanics">
+			<div class="colorblock mechanics" v-bind:class="{ expand: mechexpand }">
 				<h2>We're <br>building a robot, <br>
 					 for you </h2>
 
-				<a href="#"><h2>Mechanics Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
+				<a v-on:click="mechexpand = !mechexpand"><h2>Mechanics Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 			</div>
-			<div class="colorblock electronics">
+			<div class="colorblock electronics" v-bind:class="{ expand: eceexpand }">
 				<h2>It’s got all you <br> need! </h2>
-				<a href="#"><h2>Electrical Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
+				<a v-on:click="eceexpand = !eceexpand"><h2>Electrical Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 			</div>
-			<div class="colorblock software">
+			<div class="colorblock software" v-bind:class="{ expand: softexpand }">
 				<h2>Fresh, <br>guaranteed</h2>
-				<a href="#"><h2>Software Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
+				<a v-on:click="softexpand = !softexpand"><h2>Software Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
 			</div>
 			<!-- <p class="colorblock aboutText">We're a Principles of Engineering team at Olin College of Engineering currently making
 				a stair climbing robot which is able to protect snacks and other objects during movement. It features
@@ -78,6 +78,13 @@
 			Blog
 		},
 		name: "Layout",
+		data: function () {
+			return {
+				mechexpand: false,
+				eceexpand: false,
+				softexpand: false
+			}
+		},
 		methods: {
 			formatDate(date) {
 				return moment(date).format("MMM Do YYYY");
