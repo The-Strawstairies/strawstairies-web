@@ -23,7 +23,7 @@ html, body {
 	transition: height 0.2s ease;
 }
 div.expand {
-	height: 60rem;
+	height: auto;
 }
 .colorblock p {
 	margin: 0;
