@@ -6,9 +6,10 @@ html, body {
 .home-animation {
 	/* max-width: 100%; */
 	position: fixed;
-top: -90px;
-left: 440px;
-width: 2285px;
+	top: 0px;
+	right: -300px;
+	width: 1500px;
+	overflow: hidden;
 }
 
 /* color blocks on main page */
@@ -82,6 +83,9 @@ to {
 	left: 70px;
 	top: 30px;
 }
+.header {
+	margin-left: 4rem;
+}
 .nav h1 {
 	display: inline-block;
 	color: black;
@@ -145,8 +149,8 @@ h2:first-of-type {
 }
 /* Main Section */
 .main {
-		margin-left: 4rem;
-		max-width: 70rem;
+		/* margin-left: 4rem; */
+		/* max-width: 70rem; */
 }
 .logo {
 		width: 10rem;
