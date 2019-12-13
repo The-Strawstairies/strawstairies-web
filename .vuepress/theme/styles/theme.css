@@ -44,6 +44,22 @@ div.expand {
 	margin-bottom: 0;
 	margin-left: 3rem;
 }
+.content__default {
+	margin-left: 4rem;
+}
+.content__default h2 {
+	margin-left: 0;
+	padding: 0;
+}
+.content__default img {
+	max-width: 400px;
+	display: block;
+	border-radius: 8px;
+	margin-top: 8px;
+}
+.header-anchor {
+	display: none;
+}
 .link-icon {
 	display: inline;
 }
