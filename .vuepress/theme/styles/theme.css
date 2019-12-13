@@ -9,12 +9,24 @@ html, body {
 
 /* color blocks on main page */
 .colorblock {
-	height: 20rem;
+	height: 30rem;
 	width: 100%;
 }
 .colorblock p {
 	margin: 0;
-	padding: 0;
+}
+.colorblock h2 {
+	font-size: 4rem;
+	padding: 1rem;
+	line-height: 4rem;
+	margin-bottom: 0;
+}
+.link-icon {
+	display: inline;
+}
+.colorblock a {
+	text-decoration: underline;
+	color: black;
 }
 .mechanics {
 	background-color: #FECC5C;
