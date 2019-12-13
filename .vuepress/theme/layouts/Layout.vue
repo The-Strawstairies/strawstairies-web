@@ -1,16 +1,15 @@
 <template>
 	<div>
-		<img class="rotate" src="/circle.png" alt="">
+		<img class="rotate" src="circle.png" alt="">
 		<div class="main">
 			<header class="header">
 
 
-				<img class="home-logo" src="/strawberry.png" alt="">
+				<img class="home-logo" src="strawberry.png" alt="">
 				<h1 id="about">The<br>Strawstairies</h1>
 				<Nav />
 
-			<img class="home-animation" src="/animation.gif" alt="">
-
+			<img class="home-animation" src="animation.gif" alt="">
 
 			</header>
 
@@ -24,14 +23,26 @@
 					 for you </h2>
 
 				<a v-on:click="mechexpand = !mechexpand"><h2>Mechanics Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
+				<template v-if="mechexpand">
+					<!-- mechanical page -->
+					<Content :pageKey="mechanics[0].key"></Content>
+				</template>
 			</div>
 			<div class="colorblock electronics" v-bind:class="{ expand: eceexpand }">
 				<h2>It’s got all you <br> need! </h2>
 				<a v-on:click="eceexpand = !eceexpand"><h2>Electrical Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
+				<template v-if="eceexpand">
+					<!-- ece page -->
+					<Content :pageKey="electronics[0].key"></Content>
+				</template>
 			</div>
 			<div class="colorblock software" v-bind:class="{ expand: softexpand }">
 				<h2>Fresh, <br>guaranteed</h2>
 				<a v-on:click="softexpand = !softexpand"><h2>Software Subsystem <font-awesome-icon class="link-icon" icon="caret-right" /></h2></a>
+				<template v-if="softexpand">
+					<!-- software page -->
+					<Content :pageKey="software[0].key"></Content>
+				</template>
 			</div>
 			<!-- <p class="colorblock aboutText">We're a Principles of Engineering team at Olin College of Engineering currently making
 				a stair climbing robot which is able to protect snacks and other objects during movement. It features
@@ -61,6 +72,7 @@
 	import { library } from '@fortawesome/fontawesome-svg-core'
 	import { faPaperPlane, faCaretRight} from '@fortawesome/free-solid-svg-icons'
 	import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+	
 	library.add(faCaretRight)
 	Vue.component('font-awesome-icon', FontAwesomeIcon)
 
@@ -90,7 +102,28 @@
 				return moment(date).format("MMM Do YYYY");
 			}
 		},
-		mounted() {
+		computed: {
+			mechanics: function () {
+				return this.$site.pages
+					.filter(x => x.path.startsWith("/blog/mechanical/"))
+					.sort(
+							(a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+					);
+			},
+			electronics: function () {
+				return this.$site.pages
+					.filter(x => x.path.startsWith("/blog/electrical/"))
+					.sort(
+							(a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+					);
+			},
+			software: function () {
+				return this.$site.pages
+					.filter(x => x.path.startsWith("/blog/software/"))
+					.sort(
+							(a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+					);
+			}
 		}
 	};
 </script>
